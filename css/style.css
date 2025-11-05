@@ -132,7 +132,7 @@ body {
 .menu__categories-subitem {
     position: relative;
     padding: 15px 0 14px;
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
