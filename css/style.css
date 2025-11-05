@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: #2F3035;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-weight: 700;
+}
+
+.menu__item {
+    display: inline-block;
+}
+
+.menu__item+.menu__item {
+    margin-left: 50px;
+}
+
+
+.header__top-right {
+    display: flex;
+    align-items: center;
+}
+
+.header__adress {
+    width: 265px;
+    margin-right: 60px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.header__adress-icon {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.header__top-right-list {
+    display: flex;
+    align-items: center;
+}
