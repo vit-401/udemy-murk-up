@@ -88,4 +88,51 @@ $(function(){
         $this.addClass('active');
         $searchInput.attr('placeholder', placeholders[tabType] || 'Введите марку');
     });
+
+    // Initialize Products Slider
+    if ($('.products__grid-products').length) {
+        console.log('Products grid found, initializing slider...');
+        try {
+            $('.products__grid-products').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true,
+                dots: false,
+             
+                speed: 500,
+                prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="#2F3035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+                nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="#2F3035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+            console.log('Products slider initialized successfully');
+            console.log('Arrows found:', $('.products__grid-products .slick-arrow').length);
+        } catch (error) {
+            console.error('Error initializing products slider:', error);
+        }
+    } else {
+        console.warn('Products grid not found!');
+    }
 });
