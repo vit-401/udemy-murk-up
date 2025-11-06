@@ -44,4 +44,48 @@ $(function(){
             closeMenu();
         }
     });
+
+    // Initialize Slick Slider
+    $('.slider__inner').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        fade: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        cssEase: 'ease',
+        prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    // Search tabs functionality
+    const $tabs = $('.tabs__item');
+    const $searchInput = $('#searchInput');
+    
+    const placeholders = {
+        number: 'Введите номер',
+        brand: 'Введите марку',
+        name: 'Введите название товара'
+    };
+
+    $tabs.on('click', function() {
+        const $this = $(this);
+        const tabType = $this.data('tab');
+        
+        $tabs.removeClass('active');
+        $this.addClass('active');
+        $searchInput.attr('placeholder', placeholders[tabType] || 'Введите марку');
+    });
 });
