@@ -1,3 +1,2 @@
 ## AI change log
 
-- [2025-11-05T00:00:00Z] css/fonts.css — Replace placeholder serif font with proper SF Pro Display font-face declarations for Regular (400), Medium (500), Semibold (600), and Bold (700) weights using woff2 and woff formats.

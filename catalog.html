@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catalog - Hydrocycles</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <div class="header_top">
+      <div class="container">
+        <div class="header__top-inner">
+          <button class="menu__burger" aria-label="Toggle menu">
+            <span class="menu__burger-line"></span>
+            <span class="menu__burger-line"></span>
+            <span class="menu__burger-line"></span>
+          </button>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Promo</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Shipping</a></li>
+            </ul>
+          </nav>
+          <div class="menu__overlay"></div>
+          <div class="logo"><img class="logo__img" src="images/logo.svg" alt="logo"></div>
+          <div class="header__top-right">
+            <div class="header__adress">
+              <span class="header__adress-icon"><img src="images/pin.svg" alt="location"></span>
+              Moscow, ul. Nauki 25
+            </div>
+            <ul class="header__top-right-list">
+              <li class="header__top-right-item">
+                <a class="header__top-right-link" href="#">
+                  <img src="images/heard.svg" alt="icon">
+                </a>
+              </li>
+              <li class="header__top-right-item">
+                <a class="header__top-right-link" href="#">
+                  <img src="images/user.svg" alt="icon">
+                </a>
+              </li>
+              <li class="header__top-right-item basket">
+                <a class="header__top-right-link" href="#">
+                  <img src="images/basket.svg" alt="icon">
+                </a>
+                <span class="header__top-right-item-count">1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="container">
+        <ul class="menu__categories">
+          <li class="menu__categories-subitem"><a class="menu__categories-sublink" href="#">Quadcycles</a></li>
+          <li class="menu__categories-subitem"><a class="menu__categories-sublink" href="#">Boats</a></li>
+          <li class="menu__categories-subitem"><a class="menu__categories-sublink active" href="#">Hydrocycles</a></li>
+          <li class="menu__categories-subitem"><a class="menu__categories-sublink" href="#">Snowmobiles</a></li>
+          <li class="menu__categories-subitem"><a class="menu__categories-sublink" href="#">Engines</a></li>
+          <li class="menu__categories-subitem"><a class="menu__categories-sublink" href="#">Parts</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+  <section class="catalog">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">Home</a>
+        <span class="breadcrumbs__separator">›</span>
+        <span class="breadcrumbs__current">Hydrocycles</span>
+      </div>
+
+      <!-- Page Title and Sorting -->
+      <div class="catalog__header">
+        <h1 class="catalog__title">Hydrocycles</h1>
+        <div class="catalog__controls">
+          <div class="catalog__tags">
+            <span class="catalog__tag">All-wheel drive</span>
+            <span class="catalog__tag">from 5000</span>
+            <span class="catalog__tag">BRP</span>
+            <span class="catalog__tag">more</span>
+          </div>
+          <div class="catalog__view-sort">
+            <div class="catalog__sort">
+              <select class="catalog__sort-select" aria-label="Sort products">
+                <option>By popularity</option>
+                <option>By price: Low to High</option>
+                <option>By price: High to Low</option>
+                <option>By name</option>
+              </select>
+            </div>
+            <div class="catalog__view-toggle">
+              <button class="catalog__view-btn catalog__view-btn--grid active" type="button" aria-label="Grid view" aria-pressed="true">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none">
+                  <rect width="4" height="4" fill="#2F3035"/>
+                  <rect y="7" width="4" height="4" fill="#2F3035"/>
+                  <rect x="7" width="4" height="4" fill="#2F3035"/>
+                  <rect x="7" y="7" width="4" height="4" fill="#2F3035"/>
+                </svg>
+              </button>
+              <button class="catalog__view-btn catalog__view-btn--list" type="button" aria-label="List view" aria-pressed="false">
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none">
+                  <rect width="19" height="3" rx="1.5" fill="#2F3035" opacity="0.3"/>
+                  <rect y="6" width="19" height="3" rx="1.5" fill="#2F3035" opacity="0.3"/>
+                  <rect y="12" width="19" height="3" rx="1.5" fill="#2F3035" opacity="0.3"/>
+                  <rect width="3" height="3" rx="1.5" fill="#2F3035" opacity="0.3"/>
+                  <rect y="6" width="3" height="3" rx="1.5" fill="#2F3035" opacity="0.3"/>
+                  <rect y="12" width="3" height="3" rx="1.5" fill="#2F3035" opacity="0.3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content: Filters + Products Grid -->
+      <div class="catalog__content">
+        <!-- Left Sidebar - Filters -->
+        <aside class="catalog__filters">
+          <div class="filters">
+            <div class="filters__tabs">
+              <button class="filters__tab active">Parameters</button>
+              <button class="filters__tab">By brand</button>
+            </div>
+
+            <!-- Availability Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Availability</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__options filters__options--cols">
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="availability" value="in-stock">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">In stock</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="availability" value="on-order">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">On order</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- New/Sale Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">New</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__options filters__options--cols">
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="new-filter" value="all" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">All</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="new-filter" value="new">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">New</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="new-filter" value="promotions">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">Promotions</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Price</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__price-range">
+                  <div class="filters__price-slider-wrapper">
+                    <div class="filters__price-slider">
+                      <div class="filters__price-track"></div>
+                      <div class="filters__price-fill"></div>
+                      <input type="range" class="filters__price-handle filters__price-handle--min" min="0" max="1000000" value="100000" step="1000">
+                      <input type="range" class="filters__price-handle filters__price-handle--max" min="0" max="1000000" value="500000" step="1000">
+                    </div>
+                  </div>
+                  <div class="filters__price-inputs">
+                    <div class="filters__price-input-wrapper">
+                      <label>from</label>
+                      <input type="text" value="100 000" class="filters__price-input" data-price="min">
+                    </div>
+                    <div class="filters__price-input-wrapper">
+                      <label>to</label>
+                      <input type="text" value="500 000" class="filters__price-input" data-price="max">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Power Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Power, hp</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__dropdown">
+                  <button class="filters__dropdown-btn">90</button>
+                  <div class="filters__dropdown-menu">
+                    <div class="filters__dropdown-item">90</div>
+                    <div class="filters__dropdown-item">130</div>
+                    <div class="filters__dropdown-item">154</div>
+                    <div class="filters__dropdown-item">230</div>
+                    <div class="filters__dropdown-item">300</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Engine Power Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Engine power, hp</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__dropdown">
+                  <button class="filters__dropdown-btn">55</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Max Speed Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Max. speed</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__dropdown">
+                  <button class="filters__dropdown-btn">205</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Brand</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__options filters__options--cols">
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="brand" value="brp" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">BRP</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="brand" value="spark-3">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">Spark 3</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="brand" value="spark-2" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">Spark 2</span>
+                  </label>
+                </div>
+                <a href="#" class="filters__show-more">Show more</a>
+              </div>
+            </div>
+
+            <!-- Model Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Model</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <input type="text" class="filters__search-input" placeholder="Enter model">
+                <div class="filters__options filters__options--cols">
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="model" value="sea-doo-spark-2" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">Sea-doo Spark 2</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="model" value="seadoo-gti-155">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">SeaDoo GTI 155</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="model" value="seadoo-spark-90" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">SeaDoo Spark 90</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="model" value="seadoo-gtr-230">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">SeaDoo GTR 230</span>
+                  </label>
+                </div>
+                <a href="#" class="filters__show-more">Show more</a>
+              </div>
+            </div>
+
+            <!-- Promotions Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Promotions</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__tags-group">
+                  <button type="button" class="filters__badge filters__badge--sale filters__badge--active">SALE</button>
+                  <button type="button" class="filters__badge filters__badge--new">NEW</button>
+                  <button type="button" class="filters__badge filters__badge--hit">HIT</button>
+                  <button type="button" class="filters__badge filters__badge--dealer">DEALER</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Countries Filter -->
+            <div class="filters__group">
+              <button class="filters__group-toggle">
+                <h3 class="filters__title">Countries</h3>
+                <span class="filters__group-arrow">▲</span>
+              </button>
+              <div class="filters__group-content">
+                <div class="filters__options filters__options--cols">
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="country" value="russia" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">Russia</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="country" value="germany" checked>
+                    <span class="filters__checkbox-checked"></span>
+                    <span class="filters__label">Germany</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="country" value="china">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">China</span>
+                  </label>
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="country" value="usa">
+                    <span class="filters__checkbox-custom"></span>
+                    <span class="filters__label">USA</span>
+                  </label>
+                </div>
+                <a href="#" class="filters__show-more">Show more</a>
+              </div>
+            </div>
+
+            <!-- Additional Filters Toggle -->
+            <div class="filters__additional">
+              <button class="filters__additional-toggle">Additional parameters</button>
+            </div>
+
+            <!-- Reset and Apply Buttons -->
+            <div class="filters__actions">
+              <a href="#" class="filters__reset" aria-label="Reset all filters">Reset filter</a>
+              <button class="filters__apply-btn" type="button" aria-label="Apply filters">SELECT</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <div class="catalog__products">
+          <div class="catalog__grid">
+            <!-- Product 1 -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango" loading="lazy">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo GTI 130hp SE Black\Mango</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">1 049 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 2 - SALE -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-sale">SALE</div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo GTI 155hp SE Long Blue Metallic</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">1 100 475 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 3 - Featured with overlay -->
+            <div class="catalog__product catalog__product--featured">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo GTR 230hp X California green">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title catalog__product-title--blue">Hydrocycle BRP SeaDoo GTR 230hp X California green</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value catalog__product-price-value--blue">1 323 700 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 4 - Out of Stock with SALE -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-sale">SALE</div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo GTR 230hp STD Black / Gulfstream</h3>
+                  <div class="catalog__product-status">
+                    <span class="catalog__product-status-text">Out of stock</span>
+                    <a href="#" class="catalog__product-notify">Notify when available</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo GTX 300hp LTD Liquid Metal</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">1 543 000 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo Spark 60hp 2 up">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo Spark 60hp 2 up</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">732 345 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo Spark GTS 90hp Rental">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo Spark GTS 90hp Rental</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">857 666 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 8 - SALE -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-sale">SALE</div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP SeaDoo WAKE 230hp PRO Teal blue</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">1 229 711 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle Spark 2-UP 900 Ho Ace Chili Pepper</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">587 440 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл Spark 2-UP 900 Ho Ace Pineapple">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle Spark 2-UP 900 Ho Ace Pineapple</h3>
+                  <div class="catalog__product-price">
+                    <span class="catalog__product-price-value">587 440 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__product-basket">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none">
+                  <path d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z" fill="#FFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Product 11 - Out of Stock with SALE -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-sale">SALE</div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle BRP Sea-doo Spark 2-UP 900 Ace Vanilla</h3>
+                  <div class="catalog__product-status">
+                    <span class="catalog__product-status-text">Out of stock</span>
+                    <a href="#" class="catalog__product-notify">Notify when available</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 12 - Out of Stock -->
+            <div class="catalog__product">
+              <div class="catalog__product-icon">
+                <img src="images/heard.svg" alt="like">
+              </div>
+              <div class="catalog__product-inner">
+                <div class="catalog__product-image">
+                  <img src="images/assets/jet_ski_PNG90 1.png" alt="Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry">
+                </div>
+                <div class="catalog__product-overlay">
+                  <button class="catalog__product-view-btn" type="button" aria-label="View product details">view product</button>
+                </div>
+                <div class="catalog__product-content">
+                  <h3 class="catalog__product-title">Hydrocycle Spark 3-UP 900 HO Ace IBR Blueberry</h3>
+                  <div class="catalog__product-status">
+                    <span class="catalog__product-status-text">Out of stock</span>
+                    <a href="#" class="catalog__product-notify">Notify when available</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <div class="pagination__inner">
+              <a href="#" class="pagination__item pagination__item--active">1</a>
+              <a href="#" class="pagination__item">2</a>
+              <a href="#" class="pagination__item">3</a>
+              <a href="#" class="pagination__item">4</a>
+              <a href="#" class="pagination__item">5</a>
+              <span class="pagination__dots">...</span>
+              <a href="#" class="pagination__item">11</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__newsletter">
+          <h3 class="footer__newsletter-title">Subscribe to our newsletter<br>and learn about promotions faster</h3>
+          <form class="footer__newsletter-form" aria-label="Newsletter subscription">
+            <input type="email" class="footer__newsletter-input" placeholder="Enter your e-mail:" aria-label="Email address" required>
+            <button type="submit" class="footer__newsletter-button" aria-label="Subscribe to newsletter">Send</button>
+          </form>
+        </div>
+        <div class="footer__links">
+          <div class="footer__links-column">
+            <h4 class="footer__links-title">Information</h4>
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__links-item">About us</a></li>
+              <li><a href="#" class="footer__links-item">Contacts</a></li>
+              <li><a href="#" class="footer__links-item">Promotions</a></li>
+              <li><a href="#" class="footer__links-item">Stores</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-column">
+            <h4 class="footer__links-title">Online store</h4>
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__links-item">Delivery and pickup</a></li>
+              <li><a href="#" class="footer__links-item">Payment</a></li>
+              <li><a href="#" class="footer__links-item">Returns & Exchanges</a></li>
+              <li><a href="#" class="footer__links-item">News</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <img src="images/icons/facebook 1.svg" alt="Instagram">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="images/icons/vk 1.svg" alt="VK">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="images/icons/facebook 1.svg" alt="Facebook">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="images/icons/youtube 1.svg" alt="YouTube">
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="#" class="footer__bottom-link">Terms of Service</a>
+        <a href="#" class="footer__bottom-link">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
